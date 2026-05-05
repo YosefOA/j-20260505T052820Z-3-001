@@ -1,3 +1,4 @@
+no se como hacer un Readme asi que inprovise ;(
 # 🌍 TravelGo
 
 TravelGo es una aplicación web básica para explorar destinos turísticos, guardarlos como favoritos y realizar reservas de manera simple.
