@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelGo</title>
+  <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav class="nav">
+    <h2 class="logo">TravelGo</h2>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="usuario.html">ususario</a></li>
+      <li><a href="#">Favoritos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="contenido">
+    <h1>Explora sin complicaciones</h1>
+    <p>Encuentra, guarda y viaja fácil</p>
+    <button onclick="scrollToBuscador()">Buscar destinos</button>
+  </div>
+</section>
+
+<!-- BUSCADOR -->
+<section class="buscador" id="buscador">
+  <h2>Busca tu destino</h2>
+  <input type="text" id="inputBusqueda" placeholder="Ej: Cartagena, París...">
+  <button onclick="buscar()">Buscar</button>
+</section>
+
+<!-- RECOMENDACIONES -->
+<section class="recomendaciones">
+  <h2>Recomendaciones</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="cartagena.webp" alt="250">
+      <h3>Cartagena</h3>
+      <button onclick="guardar('Cartagena')">Guardar</button>
+    </div>
+
+    <div class="card">
+      <img src="paris.jpg" alt="250">
+      <h3>París</h3>
+      <button onclick="guardar('París')">Guardar</button>
+    </div>
+
+    <div class="card" alt="250">
+      <img src="tokio.webp">
+      <h3>Tokyo</h3>
+      <button onclick="guardar('Tokyo')">Guardar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAVORITOS -->
+<section class="favoritos">
+  <h2>⭐ Tus favoritos</h2>
+  <section class="cotizador">
+  <h2>💰 Cotizar viaje</h2>
+
+  <input type="number" id="base" placeholder="Precio base">
+  <input type="number" id="personas" placeholder="Número de personas">
+  <input type="number" id="dias" placeholder="Días antes de cancelar">
+
+  <button onclick="calcularViaje()">Calcular</button>
+
+  <p id="resultado"></p>
+</section>
+  <ul id="listaFavoritos"></ul>
+</section>
+
+<script src="pagina1.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Destinos - TravelGo</title>
+  <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <h2 class="logo">TravelGo</h2>
+    <ul>
+      <li><a href="pagina1.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="usuario.html">Usuario</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="recomendaciones">
+  <h2>Destinos disponibles</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Cartagena</h3>
+      <p>Cupos: <span id="cuposCartagena">5</span></p>
+      <button onclick="reservar('Cartagena')">Reservar</button>
+    </div>
+
+    <div class="card">
+      <h3>París</h3>
+      <p>Cupos: <span id="cuposParis">3</span></p>
+      <button onclick="reservar('Paris')">Reservar</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="favoritos">
+  <h2>🧾 Reservas</h2>
+  <ul id="listaReservas"></ul>
+</section>
+
+<script src="destinos.js"></script>
+</body>
+</html>

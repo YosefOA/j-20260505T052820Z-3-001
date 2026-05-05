@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Usuario - TravelGo</title>
+  <link rel="stylesheet" href="pagina1.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <h2 class="logo">TravelGo</h2>
+      <ul>
+        <li><a href="pagina1.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="usuario.html">Usuario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="buscador">
+    <h2>👤 Datos del usuario</h2>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="email" id="correo" placeholder="Correo">
+
+    <button onclick="validarUsuario()">Validar</button>
+
+    <p id="mensajeUsuario"></p>
+  </section>
+
+  <section class="buscador">
+    <h2>❌ Cancelar reserva</h2>
+
+    <input type="number" id="diasCancelacion" placeholder="Días antes de cancelar">
+
+    <button onclick="cancelar()">Cancelar</button>
+
+    <p id="resultadoCancelacion"></p>
+  </section>
+
+  <script src="usuario.js"></script>
+</body>
+
+</html>
